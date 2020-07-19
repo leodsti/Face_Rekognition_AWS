@@ -13,6 +13,10 @@ Nothing complicated. All files are shared in this github.
 
 - On Firefow you need to enable in about:config both media.devices.insecure.enabled and media.getusermedia.insecure.enabled
 
+## Pre-requisites
+
+You will need to create a private S3 bucket named 'image-for-reko'.
+
 ## Front End 
 
 You will need to launch an EC2 instance with Ubuntu and install Apache server on it.

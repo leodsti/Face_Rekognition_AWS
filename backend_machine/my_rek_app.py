@@ -5,7 +5,9 @@ import boto3
 import json
 
 app = Flask(__name__)
-CORS(app)  # added by me
+CORS(app)
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
+
 
 
 @app.route("/get_picture1/", methods=['GET', 'POST'])
@@ -52,7 +54,7 @@ def save_uri_as_jpeg(uri, imagename):
 
 
 def upload_to_S3(imagename):
-    mys3 = boto3.resource('s3')
+    mys3 = boto3.resource('s3',region_name='us-east-1')
     mybucket = mys3.Bucket('image-for-reko')
     myobject = mybucket.Object(imagename)
     myobject.delete()
@@ -64,7 +66,7 @@ def upload_to_S3(imagename):
 
 
 def AWSdetect_faces(imagename):
-    reko = boto3.client('rekognition')
+    reko = boto3.client('rekognition',region_name='us-east-1')
     response = reko.detect_faces(
         Image={
             'S3Object': {
@@ -80,7 +82,7 @@ def AWSdetect_faces(imagename):
 
 
 def AWScomparefaces():
-    reko = boto3.client('rekognition')
+    reko = boto3.client('rekognition',region_name='us-east-1')
 
     response = reko.compare_faces(
         SourceImage={

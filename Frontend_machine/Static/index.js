@@ -1,4 +1,4 @@
-var backendip = '35.174.61.191'
+var backendip = 'IP of your Server'
 
 function set_webcam(){
     Webcam.set(
