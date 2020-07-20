@@ -1,0 +1,17 @@
+1) Launch an EC2 Server with Apache on it. (Ubuntu 18xx) 13h45 (~12 minutes)
+2) Get the "Front end" files on it and move them to the right place (10 minutes)
+	a) Get the file on the EC2 machine : https://github.com/leodsti/Face_Rekognition_AWS
+	b) Move them to the right folder
+	
+3) Test that the front end works fine (Advice: Use Firefox or Chrome)
+
+4) Launch an EC2 Server with Conda on it (Ubuntu) (~15 minutes)
+	a) Get the file onto the EC2 Instance
+5) Create a virtual env with python 3.6
+6) install the packages "Flask", "flask_cors" and "boto3".
+
+7) Make the links and between front end and back end.
+8) Test and enjoy !
+(9) the clean up
+
+PS : Change the name of the "Static" folder
