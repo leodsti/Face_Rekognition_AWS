@@ -11,11 +11,13 @@ Nothing complicated. All files are shared in this github.
 (chrome://flags/#unsafely-treat-insecure-origin-as-secure)  
 ![alt text](https://github.com/JeanMILPIED/Face_Rekognition_AWS/blob/master/webcam-google.JPG) 
 
-- On Firefow you need to enable in about:config both media.devices.insecure.enabled and media.getusermedia.insecure.enabled
+- On Firefox you need to enable in about:config 
+	- both media.devices.insecure.enabled 
+	- media.getusermedia.insecure.enabled
 
 ## Pre-requisites
 
-You will need to create a private S3 bucket named 'image-for-reko'.
+You will need to create a private S3 bucket and change the name into the back end script.
 
 ## Front End 
 
