@@ -97,8 +97,7 @@ def AWScomparefaces():
                 'Name': 'image2.jpg',
             }
         },
-        SimilarityThreshold=90,
-        QualityFilter='AUTO'
+        SimilarityThreshold=90
     )
 
     FaceMatch = response['FaceMatches']

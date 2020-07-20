@@ -7,10 +7,12 @@
 
 4) Launch an EC2 Server with Conda on it (Ubuntu) (~15 minutes)
 	a) Get the file onto the EC2 Instance
-5) Create a virtual env with python 3.6
-6) install the packages "Flask", "flask_cors" and "boto3".
+5) Create a virtual env with python 3.6 
+6) Install the packages "Flask", "flask_cors" and "boto3" (into your virtual environement using Conda install, carefull with flask_cors). (~20 minutes)
 
 7) Make the links and between front end and back end.
+	a) In index.js (on the Front End), change the IP to the IP your back end server (at the top of the index.js file)
+	b) On the back end EC2 instance, open the port (defined in the python file)
 8) Test and enjoy !
 (9) the clean up
 
