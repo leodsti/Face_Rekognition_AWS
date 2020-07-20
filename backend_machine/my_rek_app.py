@@ -19,6 +19,10 @@ def p1():
 def p2():
     return getpicture(2)
 
+@app.route("/", methods=['GET', 'POST'])
+def testRoute():
+    return "leo"
+
 
 def getpicture(myid):
     rdata = request.get_data()
