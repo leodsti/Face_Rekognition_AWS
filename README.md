@@ -11,8 +11,8 @@ Nothing complicated. All files are shared in this github.
 (chrome://flags/#unsafely-treat-insecure-origin-as-secure)  
 ![alt text](https://github.com/JeanMILPIED/Face_Rekognition_AWS/blob/master/webcam-google.JPG) 
 
-- On Firefox you need to enable in about:config 
-	- both media.devices.insecure.enabled 
+- On Firefox you need to enable in about:config both
+	- media.devices.insecure.enabled 
 	- media.getusermedia.insecure.enabled
 
 ## Pre-requisites
