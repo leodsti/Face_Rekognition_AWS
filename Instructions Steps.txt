@@ -15,5 +15,3 @@
 	b) On the back end EC2 instance, open the port (defined in the python file)
 8) Test and enjoy !
 (9) the clean up
-
-PS : Change the name of the "Static" folder

@@ -1,0 +1,24 @@
+#Apache on ubuntu
+
+sudo apt-get update
+sudo apt-get install -y apache2
+sudo mv index.html /var/www/html/index.html
+
+
+
+#Back End
+sudo apt-get update
+conda create --name flask_env python=3.6
+
+conda install Flask
+conda install -c anaconda flask-cors
+conda install boto3
+
+#Firefox
+media.devices.insecure.enabled to true
+media.getusermedia.insecure.enabled to true
+
+Carefull with Port and IP :)
+Port needs to be opened on Server and IP should not be localhost
+
+region_name='us-east-1')
